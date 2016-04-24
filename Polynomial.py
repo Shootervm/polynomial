@@ -78,6 +78,9 @@ class Polynomial(object):
     def derivative(self):
         return Polynomial([self.coeffs[d] * d for d in range(1, len(self.coeffs))])
 
+    def deriv(self):
+        return self.derivative()
+
 
 def start():
     pass
